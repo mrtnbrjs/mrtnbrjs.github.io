@@ -105,6 +105,11 @@ body{
               a{
                 text-decoration: none;
                 color: #474747;
+                -webkit-transition : color 0.3s ease-in-out;
+                -moz-transition    : color 0.3s ease-in-out;
+                -ms-transition     : color 0.3s ease-in-out;  
+                -o-transition      : color 0.3s ease-in-out;
+                transition         : color 0.3s ease-in-out;
                 &:hover{
                   color: #7D32D9;
                 }
@@ -125,6 +130,17 @@ body{
       border-bottom : 1px dashed #BFCFF7;
       padding-bottom: 10px;
       color : #666
+    }
+    .post-content{
+      max-width: 860px;
+      display: block;
+      margin: 0 auto;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      p{
+        line-height: 1.6;
+        font-size: 1.1em;
+      }
     }
   }
   .site-footer{
