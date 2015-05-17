@@ -60,6 +60,7 @@ body{
     width: 100%;
     display: block;
     padding-top: 58px;
+    padding-bottom: 50px;
     .wrapper{
       display: block;
       padding-top: 20px;
@@ -67,6 +68,25 @@ body{
       margin: 0 auto;
       padding-left: 20px;
       padding-right: 20px;
+      .home{
+        .page-heading{
+          border-bottom : 1px dashed #BFCFF7;
+          padding-bottom: 10px;
+          color : #666;
+        }
+        .post-list{
+          padding-left: 0;
+          list-style: none;
+          li{
+            .post-meta{
+
+            }
+            h2{
+
+            }
+          }
+        }
+      }
     }
   }
   .site-footer{
@@ -82,5 +102,6 @@ body{
       margin: 0 auto;
       padding-left: 20px;
       padding-right: 20px;
+      color: #fff;
     }
   }
