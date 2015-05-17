@@ -113,6 +113,10 @@ body{
                 &:hover{
                   color: #7D32D9;
                 }
+                &:active{
+                  top: 3px;
+                  position: relative;
+                }
               }
             }
             p{
