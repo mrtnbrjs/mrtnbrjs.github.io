@@ -1,0 +1,26 @@
+body{
+  display: block;
+  .site-header{
+    display: block;
+    width: 100%;
+    box-shadow: 0px 2px 3px rgba(#8EB2C5,0.5);
+    background-color: rgba(#fff, 0.96);
+    position: fixed;
+    .wrapper{
+      display: block;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      a{
+        &.site-title{
+          color: #615375;
+          text-decoration: none;
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}
