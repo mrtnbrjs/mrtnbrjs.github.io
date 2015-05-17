@@ -25,6 +25,10 @@ body{
           text-decoration: none;
           font-size: 1em;
           display: inline-block;
+          &:active{
+            top: 3px;
+            position: relative;
+          }
 
         }
         &.site-title::first-word{
@@ -146,6 +150,11 @@ body{
         font-size: 1.1em;
       }
     }
+  }
+  .disqus-row{
+    max-width: 820px;
+    display: block;
+    margin: 0 auto;
   }
   .site-footer{
     width: 100%;
