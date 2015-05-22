@@ -12,6 +12,3 @@ github_username:  mrtnbrjs
 markdown: kramdown
 sass:
   style: compressed
-
-gems: [jekyll-test-plugin, jekyll-jsonify, jekyll-assets, jekyll-font-awesome]
- # This will require each of these gems automatically.
