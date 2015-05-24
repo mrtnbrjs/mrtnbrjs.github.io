@@ -2,7 +2,7 @@
 layout: post
 title:  "La primera entrada"
 date:   2015-05-23 09:33:22
-categories: blog developer web martin barajas
+categories: blog
 ---
 
 Desde que inicié en esto del “internet" (que no es mucho tiempo) he tenido las ganas de tener un espacio, algo más allá de lo que te permiten las redes sociales, sinceramente había pensado mucho como sería mi sitio personal, como se iba a ver y que funcionalidad tendría, ahora que estoy en ello me doy cuenta que nunca pensé que iba hacer allí. 
