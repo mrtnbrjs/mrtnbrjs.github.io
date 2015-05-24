@@ -10,5 +10,6 @@ github_username:  mrtnbrjs
 
 # Build settings
 markdown: kramdown
+permalink : /:categories/:year/:title
 sass:
   style: compressed

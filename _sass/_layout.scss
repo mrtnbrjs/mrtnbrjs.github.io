@@ -183,3 +183,47 @@ body{
       color: #fff;
     }
   }
+  .social-share{
+    max-width: 780px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .twitter,
+    .facebook,
+    .googleplus{
+      padding-top: 10px;
+      padding-left : 15px;
+      padding-right: 15px;
+      padding-bottom: 8px;
+      border-radius : 5px;
+      margin-left: 15px;
+    }
+    .twitter{
+      color: #00aced;
+      border : 1px solid #00aced;
+      &:hover{
+        text-decoration: underline;
+        color: lighten(#00aced, 20%);
+      }
+    }
+    .facebook{
+      color: #3b5998;
+      border : 1px solid #3b5998;
+      &:hover{
+        text-decoration: underline;
+        color: lighten(#3b5998, 20%);
+      }
+    }
+    .googleplus{
+      color: #dd4b39;
+      border : 1px solid #dd4b39;
+      &:hover{
+        text-decoration: underline;
+        color: lighten(#dd4b39, 20%);
+      }
+    }
+    a{
+      text-decoration: none;
+    }
+  }
