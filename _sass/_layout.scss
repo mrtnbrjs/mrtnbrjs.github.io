@@ -292,6 +292,11 @@ body{
         float: right;
       }
     }
+    .contact-list{
+      li{
+        margin-bottom: 20px;
+      }
+    }
   }
   @media screen and (max-width: 500px) {
     .social-share{
