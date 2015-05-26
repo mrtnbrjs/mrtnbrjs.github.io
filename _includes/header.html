@@ -1,1 +1,23 @@
-<li><a href="{{ site.baseurl }}/index.html"><i class='fa fa-home'></i> Home</a></li>
+<header class="site-header">
+
+  <div class="wrapper">
+
+    <h1><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    <nav class="site-nav">
+      <div class="mobile-menu">
+        <i class="fa fa-bars"></i>
+      </div>
+      <div class="trigger">
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">Acerca de mi</a>
+          {% endif %}
+        {% endfor %}
+        <a class="page-link" href="">Blog</a>
+        <a class="page-link" href="">Proyectos</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
