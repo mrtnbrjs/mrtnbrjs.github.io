@@ -33,6 +33,9 @@
 
     <h1><a class="site-title" href="/">Martín Barajas</a></h1>
     <nav class="site-nav">
+      <div class="mobile-menu">
+        <i class="fa fa-bars"></i>
+      </div>
       <div class="trigger">
         
           
@@ -46,7 +49,7 @@
           
         
         <a class="page-link" href="">Blog</a>
-        <a class="page-link" href="">Proyectos <i class="fa-camera-retro"></i></a>
+        <a class="page-link" href="">Proyectos</a>
       </div>
     </nav>
 
@@ -67,7 +70,7 @@
   <article class="post-content">
     <p>Desde que inicié en esto del “internet” (que no es mucho tiempo) he tenido las ganas de tener un espacio, algo más allá de lo que te permiten las redes sociales, sinceramente había pensado mucho como sería mi sitio personal, como se iba a ver y que funcionalidad tendría, ahora que estoy en ello me doy cuenta que nunca pensé que iba hacer allí.</p>
 
-<p>Siendo francos no soy buen redactor y nunca he escrito para ningún sitio así que espero poder ser claro en mis próximas entradas. Pero ya dejando a un lado todo lo que conlleva el haber creado esto, el propósito de este sitio (mas bien blog) es poder compartir cosas que voy aprendiendo día a día y dar mi opinión en temas que tenga que ver con el desarrollo web. Espero tomar como un hábito esto de escribir y que en un futuro este espacio sea útil.</p>
+<p>Siendo francos no soy buen redactor y nunca he escrito para ningún sitio así que espero poder ser claro en mis próximas entradas. Pero ya dejando a un lado todo lo que conlleva el haber creado esto, el propósito de este sitio (más bien blog) es poder compartir cosas que voy aprendiendo día a día y dar mi opinión en temas que tenga que ver con el desarrollo web. Espero tomar como un hábito esto de escribir y que en un futuro este espacio sea útil.</p>
 
 <p>Muchas gracias si te tomaste el tiempo de leer esta entrada, si tienes alguna opinión, sugerencia, critica o lo que sea te invito a comentar.</p>
 
@@ -105,22 +108,16 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Martín Barajas</h2>
+    <h2 class="footer-heading">Ponte en contacto</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
-          <li>Martín Barajas</li>
-          <li><a href="mailto:jesus.martin2093@gmail.com">jesus.martin2093@gmail.com</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col  footer-col-2">
-        <ul class="social-media-list">
+          <li><a href="mailto:jesus.martin2093@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
           
           <li>
             <a href="https://github.com/mrtnbrjs">
-              <span class="username">mrtnbrjs</span>
+              <span class="username"><i class="fa fa-twitter"></i></span>
             </a>
           </li>
           
@@ -128,22 +125,23 @@
           
           <li>
             <a href="https://twitter.com/mrtnbrjs">
-              <span class="username">mrtnbrjs</span>
+              <span class="username"><i class="fa fa-github"></i></span>
             </a>
           </li>
           
         </ul>
       </div>
 
-      <div class="footer-col  footer-col-3">
-        <p class="text">Me llamo Martín Barajas, soy apasionado del desarrollo y diseño web, me gusta usar tecnologías como HTML, CSS, SASS y Javascript 
-</p>
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+        </ul>
       </div>
     </div>
 
   </div>
 
 </footer>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = 'mrtnbrjs';
@@ -155,6 +153,10 @@
         s.src = '//' + disqus_shortname + '.disqus.com/count.js';
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
+
+    $(".mobile-menu").click(function(){
+      $(".trigger").slideToggle();
+    });
 </script>
 
 

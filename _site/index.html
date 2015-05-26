@@ -34,6 +34,9 @@
 
     <h1><a class="site-title" href="/">Martín Barajas</a></h1>
     <nav class="site-nav">
+      <div class="mobile-menu">
+        <i class="fa fa-bars"></i>
+      </div>
       <div class="trigger">
         
           
@@ -47,7 +50,7 @@
           
         
         <a class="page-link" href="">Blog</a>
-        <a class="page-link" href="">Proyectos <i class="fa-camera-retro"></i></a>
+        <a class="page-link" href="">Proyectos</a>
       </div>
     </nav>
 
@@ -88,22 +91,16 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Martín Barajas</h2>
+    <h2 class="footer-heading">Ponte en contacto</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
-          <li>Martín Barajas</li>
-          <li><a href="mailto:jesus.martin2093@gmail.com">jesus.martin2093@gmail.com</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col  footer-col-2">
-        <ul class="social-media-list">
+          <li><a href="mailto:jesus.martin2093@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
           
           <li>
             <a href="https://github.com/mrtnbrjs">
-              <span class="username">mrtnbrjs</span>
+              <span class="username"><i class="fa fa-twitter"></i></span>
             </a>
           </li>
           
@@ -111,22 +108,23 @@
           
           <li>
             <a href="https://twitter.com/mrtnbrjs">
-              <span class="username">mrtnbrjs</span>
+              <span class="username"><i class="fa fa-github"></i></span>
             </a>
           </li>
           
         </ul>
       </div>
 
-      <div class="footer-col  footer-col-3">
-        <p class="text">Me llamo Martín Barajas, soy apasionado del desarrollo y diseño web, me gusta usar tecnologías como HTML, CSS, SASS y Javascript 
-</p>
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+        </ul>
       </div>
     </div>
 
   </div>
 
 </footer>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = 'mrtnbrjs';
@@ -138,6 +136,10 @@
         s.src = '//' + disqus_shortname + '.disqus.com/count.js';
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
+
+    $(".mobile-menu").click(function(){
+      $(".trigger").slideToggle();
+    });
 </script>
 
 

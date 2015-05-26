@@ -68,6 +68,9 @@ body{
           }
         }
       }
+      .mobile-menu{
+        display: none;
+      }
     }
   }
   .page-content{
@@ -181,6 +184,41 @@ body{
       padding-left: 20px;
       padding-right: 20px;
       color: #fff;
+      img{
+        vertical-align: top;
+        display: inline-block;
+      }
+      .footer-col-wrapper{
+        .contact-list{
+          vertical-align: top;
+          display: inline-block;
+          list-style: none;
+          padding-left: 0;
+          li{
+            display: inline-block;
+            border : 2px solid #fff;
+            text-align: center;
+            width: 80px;
+            height: 80px;
+            vertical-align: middle;
+            border-radius: 50%;
+            margin-right: 30px;
+            a{
+              vertical-align: middle;
+              font-size: 3em;
+              margin-top: 12px;
+              display: block;
+              color: #fff;
+            }
+            &:hover{
+              border-color : #26ADE4;
+              a{
+                color: #26ADE4;
+              }
+            }
+          }
+        }
+      }
     }
   }
   .social-share{
@@ -204,7 +242,8 @@ body{
       border : 1px solid #00aced;
       &:hover{
         text-decoration: underline;
-        color: lighten(#00aced, 20%);
+        color: lighten(#00aced, 10%);
+        border-color: lighten(#00aced, 10%);
       }
     }
     .facebook{
@@ -212,7 +251,8 @@ body{
       border : 1px solid #3b5998;
       &:hover{
         text-decoration: underline;
-        color: lighten(#3b5998, 20%);
+        color: lighten(#3b5998, 10%);
+        border-color: lighten(#3b5998, 10%);
       }
     }
     .googleplus{
@@ -220,10 +260,54 @@ body{
       border : 1px solid #dd4b39;
       &:hover{
         text-decoration: underline;
-        color: lighten(#dd4b39, 20%);
+        color: lighten(#dd4b39, 10%);
+        border-color: lighten(#dd4b39, 10%);
+
       }
     }
     a{
       text-decoration: none;
+    }
+  }
+  @media screen and (max-width: 530px) {
+
+    .site-nav{
+      display: blocK; 
+      .trigger{
+        float: none;
+        display: none;
+        a{
+          display: block;
+          width: 100%;
+          padding-bottom: 20px;
+        }
+      }
+      .mobile-menu{
+        vertical-align: top;
+        display: block !important;
+        font-size: 2em;
+        margin-top: -8px;
+        cursor: pointer;
+        color: #26ADE4;
+        float: right;
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .social-share{
+    .twitter,
+    .facebook,
+    .googleplus{
+      display: blocK;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 0;
+      }
+    }
+    .site-nav{
+      .trigger{
+        display: none;
+      }
     }
   }
