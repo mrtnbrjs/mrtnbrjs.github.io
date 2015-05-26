@@ -12,4 +12,5 @@ github_username:  mrtnbrjs
 markdown: kramdown
 permalink : /:categories/:year/:title
 sass:
-  style: compressed
+  style: compressed 
+
