@@ -4,7 +4,7 @@ email: jesus.martin2093@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Me llamo Martín Barajas, soy apasionado del desarrollo y diseño web, me gusta usar tecnologías como HTML, CSS, SASS y Javascript 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://mrtnbrjs.com" # the base hostname & protocol for your site
+url: "http://mrtnbrjs.github.io" # the base hostname & protocol for your site
 twitter_username: mrtnbrjs
 github_username:  mrtnbrjs
 
