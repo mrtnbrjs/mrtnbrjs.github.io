@@ -1,91 +1,70 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import { League_Spartan } from "next/font/google";
+import { dummyDB } from "../../dummyDB";
+import Image from "next/image";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = League_Spartan({ subsets: ["latin"] }); // $ExpectType FontFace
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      <main className={"max-w-4xl mx-auto pt-16 pl-6 pr-6 "}>
+        <section className="bg-black">
+          <div className="grid max-w-screen-xl mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div className="mr-auto place-self-center lg:col-span-7">
+              <h1
+                style={inter.style}
+                className="glitch max-w-2xl mb-4 text-5xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+              >
+                <span style={inter.style} aria-hidden="true">
+                  Hola soy Martín
+                </span>
+                Hola soy Martín
+                <span style={inter.style} aria-hidden="true">
+                  Hola soy Martín
+                </span>
+              </h1>
+              <p className="max-w-2xl mt-6 mb-6 font-light text-white leading-relaxed lg:mb-8 md:text-lg lg:text-xl">
+                Soy desarrollador <b className="font-bold">frontend</b>, músico
+                aficionado y me gusta el fútbol. Aquí vengo a dar mis opiniones
+                sobre lo que voy viviendo.
+              </p>
+            </div>
+            <div className="floating mx-auto lg:col-span-5 align-center justify-center">
+              <div className="gradient-bg lg:mt-0 lg:col-span-5 lg:flex  bg-white mx-auto p-1 rounded-full h-fit w-fit  align-center justify-center ">
+                <Image
+                  src="/images/profile.jpg"
+                  alt="Picture of the author"
+                  width={201}
+                  height={201}
+                  style={{
+                    borderRadius: "50%",
+                    maxHeight: "201px",
+                    maxWidth: "201px",
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <h3 className={"text-3xl font-bold text-white"} style={inter.style}>
+          Entradas
+        </h3>
+        {dummyDB.map((post: any) => (
+          <div
+            key={post.slug}
+            className={
+              "mt-8 border border-white p-4 rounded-lg hover-page cursor-pointer "
+            }
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+            <h2 className={"text-2xl font-bold text-white"} style={inter.style}>
+              {post.title}
+            </h2>
+            <p className={"mt-2 text-white"}>
+              {post.content.substring(0, 30)}...
+            </p>
+          </div>
+        ))}
+      </main>
+    </>
+  );
 }
