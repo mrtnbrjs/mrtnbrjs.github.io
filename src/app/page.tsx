@@ -36,7 +36,7 @@ export default function Home() {
                 ¡Gracias de antemano por su ayuda!
               </p>
               <div className="mx-auto">
-                <style contenteditable="true" style={
+                <style contentEditable="true" style={
                   {
                     zIndex:1,
                     width:"100%",
