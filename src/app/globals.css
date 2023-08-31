@@ -4,6 +4,21 @@
 
 body {
   background-color: #000;
+  animation: blinkingBackground .639s infinite;
+}
+
+nav {
+  background-color: #000;
+  animation: blinkingBackgroundBlackAndWhite .639s infinite;
+}
+
+p {
+  animation: blinkingFlont .639s infinite;
+}
+
+.bg-black {
+  background-color: #000;
+  animation: blinkingBackgroundInverted .639s infinite;
 }
 
 .glitch {
@@ -114,20 +129,20 @@ body {
 .hover-page:hover {
   background: linear-gradient(270deg, #b41010, #11a211, #1010a9);
   background-size: 600% 600%;
-  transition: all 0.5s ease-in-out;
+  transition: all 3s ease-in-out;
 
-  -webkit-animation: AnimationName 1s ease infinite;
-  -moz-animation: AnimationName 1s ease infinite;
-  animation: AnimationName 1s ease infinite;
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 3s ease infinite;
 }
 
 .gradient-bg {
   background: linear-gradient(270deg, #ffa8a8, #97ff97, #b0b0ff);
   background-size: 600% 600%;
 
-  -webkit-animation: AnimationName 1s ease infinite;
-  -moz-animation: AnimationName 1s ease infinite;
-  animation: AnimationName 1s ease infinite;
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 3s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
@@ -162,4 +177,34 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+
+@keyframes blinkingBackground{
+  0%		{ background-color: #15ff21;}
+  25%		{ background-color: #2d81ff;}
+  50%		{ background-color: #ff0000;}
+  75%		{ background-color: #ffff4b;}
+  100%	{ background-color: #ff29db;}
+}
+
+@keyframes blinkingBackgroundInverted{
+  0%		{ background-color: #ff15d0;}
+  25%		{ background-color: #3eff2d;}
+  50%		{ background-color: #f80fc5;}
+  75%		{ background-color: #ffff4b;}
+  100%	{ background-color: #d4ff29;}
+}
+
+@keyframes blinkingBackgroundBlackAndWhite{
+  0%		{ background-color: #e8ff1a;}
+  100%	{ background-color: #ff2ec4;}
+}
+
+@keyframes blinkingFlont{
+  0%		{ font-family:'Times New Roman', Times, serif;}
+  25%		{ font-family: 'Courier New', Courier, monospace;}
+  50%		{ font-family: Verdana, Geneva, Tahoma, sans-serif;}
+  75%		{ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+  100%	{ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
 }

@@ -180,7 +180,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "5db068ce60ebb91a"; }
+/******/ 		__webpack_require__.h = function() { return "b5464d3121ef90dc"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -786,7 +786,7 @@
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = function(chunkId, promises) {
-/******/ 			var cssChunks = {"_app-client_node_modules_next_font_google_target_css_path_src_app_page_tsx_import_League_Spar-1295c9":1,"_app-client_src_app_globals_css":1,"_app-client_node_modules_next_font_google_target_css_path_src_components_Nav_index_tsx_import-db66f5":1};
+/******/ 			var cssChunks = {"_app-client_node_modules_next_font_google_target_css_path_src_app_page_tsx_import_League_Spar-1295c9":1,"_app-client_src_app_globals_css":1,"_app-client_node_modules_next_font_google_target_css_path_src_components_Nav_index_tsx_import-db66f5":1,"_app-client_node_modules_next_font_google_target_css_path_src_app_blog_slug_page_tsx_import_R-3af471":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(function() {

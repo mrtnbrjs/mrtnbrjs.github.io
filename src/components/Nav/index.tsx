@@ -4,8 +4,8 @@ const inter = League_Spartan({ subsets: ["latin"] }); // $ExpectType FontFace
 
 export default function Nav() {
   return (
-    <nav className="bg-black sm:px-4 py-2.5 border-solid border border-white sticky">
-      <div className="container flex flex-wrap items-center justify-between mx-auto max-w-4xl pr-6 pl-6 ">
+    <nav className="sm:px-4 py-2.5 border-solid border border-white sticky">
+      <div className="container flex flex-wrap items-center justify-between mx-auto max-w-4xl pr-1 pl-1 ">
         <Link href="/" className="flex items-center">
           <h1
             style={inter.style}
@@ -42,37 +42,6 @@ export default function Nav() {
             ></path>
           </svg>
         </button>
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-black md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
-            <li>
-              <a
-                style={inter.style}
-                href="#"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Entradas
-              </a>
-            </li>
-            <li>
-              <a
-                style={inter.style}
-                href="#"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Más acerca de mi
-              </a>
-            </li>
-            <li>
-              <a
-                style={inter.style}
-                href="#"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Contacto
-              </a>
-            </li>
-          </ul>
-        </div>
       </div>
     </nav>
   );
