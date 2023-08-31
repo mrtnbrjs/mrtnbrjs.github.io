@@ -1,7 +1,5 @@
 import { League_Spartan } from "next/font/google";
-import { dummyDB } from "../../dummyDB";
 import Image from "next/image";
-import Link from "next/link";
 
 const inter = League_Spartan({ subsets: ["latin"] }); // $ExpectType FontFace
 
