@@ -20,9 +20,145 @@ export default function RootLayout({
         <title>{metadata.title}</title>
       </head>
 
-      <body className="pb-40">
+      <body>
         <Nav />
         {children}
+        <div style={
+            {
+              position:"relative",
+            }
+          }>
+        <ul className="containerA" style={
+          {
+            opacity:0.5,
+            zIndex:-1,
+          }
+        }>
+
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+        </ul>
+        </div>
+        <div style={
+            {
+              position:"relative",
+            }
+          }>
+        <ul className="containerB" style={
+          {
+            opacity:0.5,
+            zIndex:-1,
+          }
+        }>
+
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+        </ul>
+        </div>
+        <div style={
+            {
+              position:"relative",
+            }
+          }>
+        <ul className="containerC" style={
+          {
+            opacity:0.4,
+            zIndex:-1,
+          }
+        }>
+
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+        </ul>
+        </div>
+        <div style={
+            {
+              position:"relative",
+            }
+          }>
+        <ul className="containerD" style={
+          {
+            opacity:0.3,
+            zIndex:-1,
+          }
+        }>
+
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+            <li className="circle"></li>
+        </ul>
+        </div>
       </body>
     </html>
   );

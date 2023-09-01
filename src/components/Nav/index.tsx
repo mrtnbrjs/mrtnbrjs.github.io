@@ -4,7 +4,7 @@ const inter = League_Spartan({ subsets: ["latin"] }); // $ExpectType FontFace
 
 export default function Nav() {
   return (
-    <nav className="sm:px-4 py-2.5 border-solid border border-white sticky">
+    <nav className="sm:px-4 py-2.5">
       <div className="container flex flex-wrap items-center justify-between mx-auto max-w-4xl pr-1 pl-1 ">
         <Link href="/" className="flex items-center">
           <h1

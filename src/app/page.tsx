@@ -6,7 +6,14 @@ const inter = League_Spartan({ subsets: ["latin"] }); // $ExpectType FontFace
 export default function Home() {
   return (
     <>
-      <main className={"max-w-4xl mx-auto pt-16"}>
+
+
+      <div className={"max-w-4xl mx-auto pt-16"} style={
+          {
+            opacity:0.87,
+            zIndex:-1,
+          }
+        }>
         <section className="bg-black">
           <div className="grid max-w-screen-xl mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
             <div className="mr-auto place-self-center lg:col-span-7">
@@ -73,7 +80,8 @@ export default function Home() {
           </div>
         </section>
 
-      </main>
+      </div>
+
     </>
   );
 }
